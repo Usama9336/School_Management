@@ -9,7 +9,7 @@
         "nodemon": "^3.1.7"
     },
     "scripts": {
-        "start": "nodemon app.js"
+        "start": "app.js"
     },
     "type": "module"
 }
