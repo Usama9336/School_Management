@@ -19,9 +19,9 @@ async function startServer() {
       // Initialize tables before starting the server
       await initializeTables();
   
-      app.listen(PORT, () => {
-        console.log(`Server running on port ${PORT}`);
-      });
+      app.listen(PORT, '0.0.0.0', () => {
+  console.log(`Server is running on http://0.0.0.0:${PORT}`);
+});
     } catch (error) {
       console.error('Server startup failed:', error);
       process.exit(1);
